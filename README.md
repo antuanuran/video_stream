@@ -7,7 +7,7 @@
 - [ ] ONVIF - протокол
 - [ ] SOAP - протокол
 - [ ] UDP - протокол
-- [ ] OpenCV (cv2), Pygame, PyAV, aioRTC, ZMQ, ImageZMQ - библиотеки
+- [ ] OpenCV (cv2), Pygame, PyAV, aioRTC, ZMQ, ImageZMQ - библиотеки и каскады
 - [ ] YOLO - детекция объектов
 - [ ] Разобраться в захвате потока видео из ip-камеры на экран / браузер (как вариант библиотека OpenCV)
 - [ ] Интеграция с FastAPI
@@ -23,14 +23,7 @@
 - **YOLO** (You Only Look Once) — архитектура нейронных сетей, предназначенная для детекции объектов на изображении. Отличительной особенностью YOLO является подход к решению задачи детекции. Один из способов решения задачи детекции заключается в разбиении изображения на квадратные области, затем классификация этих областей на наличие объекта и классификация самого объекта
 - **SOAP** (Simple Object Access Protocol) — стандартный протокол по версии W3C. Данные передаются в формате XML. В отличие от REST-протокола, где данные передаются в json.
 - **Датаграмма** (datagram) - это блок информации, передаваемый протоколом через сеть связи без предварительного установления соединения и создания виртуального канала. Любой протокол, не устанавливающий предварительное соединение (а также обычно не контролирующий порядок приёмо-передачи и дублирование пакетов), называется датаграммным протоколом. Таковы, например, протоколы Ethernet, IP, UDP и др.
-
-- https://habr.com/ru/articles/678706/ - поиск объектов
-- https://dzen.ru/a/X8n9H2vK0Ey8ZBPF   - ImageAI
-- https://youtu.be/Uj4O2_dwRiA?si=DppZU1Ls4EvOKc6g - ImageAI
-- https://pythonpip.ru/osnovy/obnaruzhenie-i-raspoznavanie-obektov-v-python-s-pomoschyu-opencv - OpenCV
-- https://pythonist-ru.turbopages.org/pythonist.ru/s/raspoznavanie-licz-i-dvizheniya-s-ispolzovaniem-kompyuternogo-zreniya/ - Opencv
-- https://vc.ru/u/1389654-machine-learning/661520-osvoenie-opencv-s-pomoshchyu-python-polnoe-rukovodstvo-po-obrabotke-izobrazheniy-i-kompyuternomu-zreniyu - Opencv
-
+- **Каскады** - признаки Хаара на определенные части лица: https://github.com/opencv/opencv/tree/4.x/data/haarcascades
 
 ### Описание процесса WebRTC:
 
@@ -77,16 +70,22 @@
   - И в итоге мы прикручиваем данный ***MediaStream*** в HTML-разметку в тег
 
 
-### Дополнительно:
+### Дополнительная информация:
 - [x] Для создания потокового видео на Python существует несколько библиотек, включая: OpenCV, Pygame, PyAV.
   - C помощью библиотеки **OpenCV** можно захватить видео с веб-камеры или из файла и отобразить его в окне приложения (cv2.VideoCapture(0).read())
 - [x] Программы для ip-видеонаблюдения на ubuntu:
   - MotionEye, Xeoma, ZoneMinder
 
+
+- https://habr.com/ru/articles/678706/ - поиск объектов
+- https://dzen.ru/a/X8n9H2vK0Ey8ZBPF   - ImageAI
+- https://youtu.be/Uj4O2_dwRiA?si=DppZU1Ls4EvOKc6g - ImageAI
+- https://pythonpip.ru/osnovy/obnaruzhenie-i-raspoznavanie-obektov-v-python-s-pomoschyu-opencv - OpenCV
+- https://pythonist-ru.turbopages.org/pythonist.ru/s/raspoznavanie-licz-i-dvizheniya-s-ispolzovaniem-kompyuternogo-zreniya/ - Opencv
+- https://vc.ru/u/1389654-machine-learning/661520-osvoenie-opencv-s-pomoshchyu-python-polnoe-rukovodstvo-po-obrabotke-izobrazheniy-i-kompyuternomu-zreniyu - Opencv
+
+
 My ip-camera:
 local ip-адрес: 192.168.1.166
 
 My статический (белый) ip: 31.186.152.153
-
-
-
