@@ -7,7 +7,7 @@
 - [ ] ONVIF - протокол
 - [ ] SOAP - протокол
 - [ ] UDP - протокол
-- [ ] OpenCV (cv2), Pygame, PyAV, aioRTC, ZMQ, ImageZMQ - библиотеки и каскады
+- [ ] OpenCV (cv2), ImageAI, Pygame, PyAV, aioRTC, ZMQ, ImageZMQ - библиотеки и каскады
 - [ ] YOLO - детекция объектов
 - [ ] Разобраться в захвате потока видео из ip-камеры на экран / браузер (как вариант библиотека OpenCV)
 - [ ] Интеграция с FastAPI
