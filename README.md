@@ -3,14 +3,20 @@
 ### Основные поинты:
 
 - [ ] WebRTC
-- [ ] RTP - протокол
+- [ ] OpenCV (cv2) библиотека (захват потока и детектинг объектов)
+- [ ] YOLO - библиотека (детектинг и обучение модели)
+- [ ] ImageAI, Pygame, numpy
 - [ ] ONVIF - протокол
+- [ ] RTP - протокол
 - [ ] SOAP - протокол
 - [ ] UDP - протокол
-- [ ] OpenCV (cv2), ImageAI, Pygame, PyAV, aioRTC, ZMQ, ImageZMQ - библиотеки и каскады
-- [ ] YOLO - детекция объектов
-- [ ] Разобраться в захвате потока видео из ip-камеры на экран / браузер (как вариант библиотека OpenCV)
-- [ ] Интеграция с FastAPI
+- [ ] Xml-каскады
+- [ ] Дальнейшая интеграция с Fast API (backend)
+- [ ] Разобраться в захвате потока видео из удаленной ip-камеры на ubuntu:
+  - модель моей камеры:   tp-link tapo TC70
+  - ip-local camera:      192.168.1.167
+  - мой статический ip:   31....
+  - учетная запись камеры: username - antuanuran / пароль: 65...
 
 
 
@@ -72,21 +78,6 @@
 
 
 ### Дополнительная информация:
-- [ ] Для создания потокового видео на Python существует несколько библиотек, включая: OpenCV, Pygame, PyAV.
-  - C помощью библиотеки **OpenCV** можно захватить видео с веб-камеры или из файла и отобразить его в окне приложения (cv2.VideoCapture(0).read())
-- [ ] Программы для ip-видеонаблюдения на ubuntu:
-  - MotionEye, Xeoma, ZoneMinder
+- [ ] Дополнительная информация
 
 
-- https://habr.com/ru/articles/678706/ - поиск объектов
-- https://dzen.ru/a/X8n9H2vK0Ey8ZBPF   - ImageAI
-- https://youtu.be/Uj4O2_dwRiA?si=DppZU1Ls4EvOKc6g - ImageAI
-- https://pythonpip.ru/osnovy/obnaruzhenie-i-raspoznavanie-obektov-v-python-s-pomoschyu-opencv - OpenCV
-- https://pythonist-ru.turbopages.org/pythonist.ru/s/raspoznavanie-licz-i-dvizheniya-s-ispolzovaniem-kompyuternogo-zreniya/ - Opencv
-- https://vc.ru/u/1389654-machine-learning/661520-osvoenie-opencv-s-pomoshchyu-python-polnoe-rukovodstvo-po-obrabotke-izobrazheniy-i-kompyuternomu-zreniyu - Opencv
-
-
-My ip-camera:
-local ip-адрес: 192.168.1.166
-
-My статический (белый) ip: 31.186.152.153
