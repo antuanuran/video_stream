@@ -14,21 +14,7 @@ def blur_face(img):
     return cv2.GaussianBlur(img, (dW, dH), 0)
 
 
-
-def blur_face(img):
-    (h, w) = img.shape[:2]
-    dW = int(w / 3.0)
-    dH = int(h / 3.0)
-
-    if dW % 2 == 0:
-        dW -= 1
-    if dH % 2 == 0:
-        dH -= 1
-
-    return cv2.GaussianBlur(img, (dW, dH), 0)
-
-
-capture = cv2.VideoCapture(3)
+capture = cv2.VideoCapture(0)
 
 face_cascade = cv2.CascadeClassifier("files_all/haarcascade_frontalface_default.xml")
 
