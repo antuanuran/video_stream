@@ -18,6 +18,8 @@ capture = cv2.VideoCapture(0)
 
 face_cascade = cv2.CascadeClassifier("files_all/haarcascade_frontalface_default.xml")
 
+# out = cv2.VideoWriter("files_all/output.mp4", cv2.VideoWriter_fourcc(*"MJPG"), 20.0, (1280, 720))
+
 while True:
     ret, img = capture.read()
 
@@ -32,11 +34,13 @@ while True:
         )  # Начинаем рисовать: img - то, на чем мы будем рисовать и дальше уже координаты конца области
         img[y : y + h, x : x + w] = blur_face(img[y : y + h, x : x + w])
 
+    # out.write(img)
     cv2.imshow("My Camera", img)  # Заголовок и сама картинка
 
     k = cv2.waitKey(30) & 0xFF  # Дождемся нажатия клавиши Esc
     if k == 27:
         break
 
+# out.release()
 capture.release()  # перестать обращаться к камере
 cv2.destroyAllWindows()  # Убрать все окна
