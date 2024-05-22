@@ -31,6 +31,20 @@ def blur_face_function(img):
 
 
 def color_function(img):
+    # b = g = r = 0
+    # clicked = False
+    # def col_function(event, x, y, flags, param):
+    #     if event == cv2.EVENT_LBUTTONUP:
+    #         global b, r, g, clicked
+    #         b, g, r = img[y, x]
+    #         b = int(b)
+    #         g = int(g)
+    #         r = int(r)
+    #         clicked = True
+    #
+    # cv2.namedWindow("Image")
+    # cv2.setMouseCallback("Image", col_function)
+
     return img
 
 
