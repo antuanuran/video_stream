@@ -5,7 +5,7 @@ import cv2
 USERNAME = "antuanuran"
 PASSWORD = "651925"
 IP = "192.168.1.167"
-PORT = "554"
+PORT = "2020"
 
 os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;udp"
 
