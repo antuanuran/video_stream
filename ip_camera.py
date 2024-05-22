@@ -4,12 +4,13 @@ import cv2
 
 USERNAME = "antuanuran"
 PASSWORD = "651925"
-IP = "192.168.1.167"
-PORT = "2020"
+# IP = "192.168.1.167"
+IP = "31.186.152.153"
+PORT = "554"
 
 os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;udp"
 
-URL = f"rtsp://{USERNAME}:{PASSWORD}@{IP}:{PORT}/stream2"
+URL = f"rtsp://{USERNAME}:{PASSWORD}@{IP}:{PORT}/stream1"
 print("Conectando com:" + URL)
 
 cap = cv2.VideoCapture(URL, cv2.CAP_FFMPEG)
