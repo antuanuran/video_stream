@@ -1,9 +1,8 @@
-# import os
 import cv2
 
 from main_functions import blur_face_function
 
-capture = cv2.VideoCapture(2)
+capture = cv2.VideoCapture(0)
 
 while True:
     ret, img = capture.read()
