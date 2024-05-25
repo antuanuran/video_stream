@@ -5,8 +5,8 @@ from main_functions import blur_face_function
 
 USERNAME = "antuanuran"
 PASSWORD = "651925"
-IP = "192.168.1.167"
-# IP = "31.186.152.153"
+# IP = "192.168.1.167"
+IP = "31.186.152.153"
 PORT = "554"
 
 os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;udp"
