@@ -28,3 +28,6 @@ logs/
 db.json
 celerybeat-schedule
 _dumps/
+
+# jupyter
+.ipynb_checkpoints/
