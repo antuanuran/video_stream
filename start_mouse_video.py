@@ -14,9 +14,6 @@ def color_function(event, x, y, flags, param):
         r = int(r)
         print(b, g, r)
 
-    if event == cv2.EVENT_RBUTTONUP:
-        print("вы нажали правую кнопку")
-
 
 def draw_info(img):
     cv2.rectangle(img, (20, 20), (700, 60), (b, g, r), -1)

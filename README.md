@@ -5,15 +5,15 @@
 - [x] WebRTC
 - [x] OpenCV (cv2) библиотека (захват потока и детектинг объектов)
 - [x] Получать поток с ip-камеры (удаленно)
-- [ ] YOLO / Tensorflow - библиотека (детектинг и обучение модели)
-- [ ] ImageAI, Pygame, numpy
+- [ ] YOLO 
+- [ ] Tensorflow - библиотека (детектинг)
+- [ ] Дальнейшая интеграция с Fast API (backend)
 - [ ] ONVIF - протокол
 - [ ] RTP - протокол
 - [ ] SOAP - протокол
 - [ ] UDP - протокол
 - [ ] Xml-каскады
-- [ ] Дальнейшая интеграция с Fast API (backend)
-
+- [ ] ImageAI, Pygame, numpy
 
 
 
